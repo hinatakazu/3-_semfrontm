@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <h1 class="class-heading">THis is the heading 1</h1>
+    <h1 class="class-heading">THis is the heading 1</h1>
+    <h2 class="class-heading">THis is the heading 2</h2>
+    <h2 class="class-heading">THis is the heading 2</h2>
+    <h2 class="class-heading">THis is the heading 2</h2>
+
+    <h1 id="id-heading">THis is the heading 1</h1>
+    <p> Hello CEC welcome back to my channel</p>
+<!-- Selectorss (Targeting the elements within the HTML)
+GetElementsById, GetElementsByClassName, GetElementsByTagName, QuerySelector, QuerySelectorAll -->
+<script>
+    var normalHeading = document.getElementsByTagName("h2");
+    console.log(normalHeading);
+    normalHeading[0].innerHTML = "<i>Heading has been changed by DOM</i>";
+
+    var classHeading = document.getElementsByClassName("class-heading")
+    console.log(classHeading);
+    normalHeading[0].innertext = "<i>Class Heading was changed by DOM, but used as innertext</i>"
+</script>
+</body>
+</html>

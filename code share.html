@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+
+  <!-- An example of a form with text and email input types, using the POST method. -->
+
+    <h2>Form with Text and Email Input</h2>
+    <form action="/submit">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+  <!-- This example uses radio buttons for selecting a user's gender.   -->
+    <h2>Select Gender</h2>
+    <form action="/submit" method="POST">
+        <label for="male">Male</label>
+        <input type="radio" id="male" name="gender" value="male"><br>
+        
+        <label for="female">Female</label>
+        <input type="radio" id="female" name="gender" value="female"><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+<!-- A simple checkbox form to agree with terms and conditions. -->
+     <h2>Terms and Conditions</h2>
+    <form action="/submit" method="POST">
+        <label>
+            <input type="checkbox" name="terms" required> I agree to the terms and conditions
+        </label><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+<!-- Here, we use a dropdown (select) element to choose a country. -->
+
+     <h2>Select a Country</h2>
+    <form action="/submit" method="POST">
+        <label for="country">Country:</label>
+        
+        <select id="country" name="country">
+            <option value="usa">USA</option>
+            <option value="india">India</option>
+            <option value="uk">UK</option>
+        </select><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+<!-- A more complex table layout with more rows and columns. -->
+
+    <h2>Login Form</h2>
+    <form action="/submit" method="POST">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username"><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br><br>
+
+        <input type="submit" value="Login">
+    </form>
+<!-- A form with a password input field. -->
+     <h2>Login Form</h2>
+    <form action="/submit" method="POST">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username"><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br><br>
+
+        <input type="submit" value="Login">
+<!-- This form includes a date input to choose a birthdate. -->
+
+
+    <h2>Enter Your Birthdate</h2>
+    <form action="/submit" method="POST">
+        <label for="birthdate">Birthdate:</label>
+        <input type="date" id="birthdate" name="birthdate"><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+
+
+</body>
+</html>

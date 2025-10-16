@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Forms Example</title>
+  <style>
+    
+  </style>
+</head>
+<body>
+  <h1>HTML Form Elements & Input Types</h1>
+
+  <!-- The form element wraps all input fields -->
+  <form action="/submit" method="POST">
+
+    <!-- 1️⃣ Text Input -->
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" placeholder="Enter your name"><br><br>
+
+    <!-- 2️⃣ Password Input -->
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" placeholder="Enter password"><br><br>
+
+    <!-- 3️⃣ Email Input -->
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="you@example.com"><br><br>
+
+    <!-- 4️⃣ Number Input -->
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" min="1" max="100"><br><br>
+
+    <!-- 5️⃣ Radio Buttons -->
+    <label>Gender:</label><br>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label><br><br>
+
+    <!-- 6️⃣ Checkboxes -->
+    <label>Skills:</label><br>
+    <input type="checkbox" id="html" name="skills" value="HTML">
+    <label for="html">HTML</label>
+    <input type="checkbox" id="css" name="skills" value="CSS">
+    <label for="css">CSS</label>
+    <input type="checkbox" id="js" name="skills" value="JavaScript">
+    <label for="js">JavaScript</label><br><br>
+
+    <!-- 7️⃣ Dropdown (Select) -->
+    <label for="country">Country:</label>
+    <select id="country" name="country">
+      <option value="usa">USA</option>
+      <option value="india">India</option>
+      <option value="uk">UK</option>
+    </select><br><br>
+
+    <!-- 8️⃣ Textarea (Multi-line text box) -->
+    <label for="message">Your Message:</label><br>
+    <textarea id="message" name="message" rows="4" cols="30" placeholder="Type here..."></textarea><br><br>
+
+    <!-- 9️⃣ Date Input -->
+    <label for="birthday">Birthday:</label>
+    <input type="date" id="birthday" name="birthday"><br><br>
+
+    <!-- 🔟 Time Input -->
+    <label for="time">Meeting Time:</label>
+    <input type="time" id="time" name="time"><br><br>
+
+    <!-- 1️⃣1️⃣ File Upload -->
+    <label for="file">Upload File:</label>
+    <input type="file" id="file" name="file"><br><br>
+
+    <!-- 1️⃣2️⃣ Range Slider -->
+    <label for="volume">Volume:</label>
+    <input type="range" id="volume" name="volume" min="0" max="100"><br><br>
+
+    <!-- 1️⃣3️⃣ Color Picker -->
+    <label for="favcolor">Favorite Color:</label>
+    <input type="color" id="favcolor" name="favcolor"><br><br>
+
+    <!-- 1️⃣4️⃣ Hidden Input -->
+    <input type="hidden" name="userid" value="12345">
+
+    <!-- 1️⃣5️⃣ URL Input -->
+    <label for="website">Website:</label>
+    <input type="url" id="website" name="website" placeholder="https://example.com"><br><br>
+
+    <!-- 1️⃣6️⃣ Tel Input -->
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" placeholder="123-456-7890"><br><br>
+
+    <!-- 1️⃣7️⃣ Search Input -->
+    <label for="search">Search:</label>
+    <input type="search" id="search" name="search" placeholder="Search something..."><br><br>
+
+    <!-- 1️⃣8️⃣ Submit Button -->
+    <input type="submit" value="Submit Form">
+
+    <!-- 1️⃣9️⃣ Reset Button -->
+    <input type="reset" value="Reset Form">
+
+    <!-- 2️⃣0️⃣ Button (normal button) -->
+    <button type="button" onclick="alert('Button clicked!')">Click Me</button>
+
+  </form>
+</body>
+</html>

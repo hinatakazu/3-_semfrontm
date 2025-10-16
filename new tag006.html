@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <!-- Three headings with h1 -->
+    <h1>This is a heading</h1>
+    <p>Writing paragraph is the text of the azkiuhsdxcnjkd
+        hhdjcxkbidhkjbcxhiknsdbxzhkcnbsdjkzxbcikajshdiwukasjhd
+    </p>
+    <!-- Same class with 2 types of heading, 3 - h1, 1 - h2 -->
+    <h1 class="class-heading">This is a heading with class</h1>
+    <h1 class="class-heading">This is a heading with class</h1>
+    <h1 class="class-heading">This is a heading with same class</h1>
+    <h2 class="class-heading">This is a second heading with a same class</h2>
+    <h1 id="id-heading">This is a heading with id</h1>
+    <!-- DOM can be used to modify or manipulate the HTML elements using JavaScript -->
+    <!-- Using DOM, we can change the content as well as the styles -->
+    <!-- Selectors (Target Element) -->
+    <!-- getElementById, getElementsByClassName, getElementsByTagName, querySelector, querySelectorAll -->
+    <script>
+         // If we use getElementsByTagName, it will return the collection (because tag will be used multiple times)
+        // textContent, innerHTML, innerText
+        // 0 refers to the collection/array index
+        // innerHTML will render the html content
+        var normalHeading = document.getElementsByTagName("h1");
+        console.log(normalHeading);
+        normalHeading[0].innerHTML = "<i>Heading has been changed by <u>DOM</u></i>";
+
+        var classHeading = document.getElementsByClassName("class-heading");
+        // innerText will render the text content
+        // If we use getElementsByClassName, it will return the collection (because class can be repeated)
+        console.log(classHeading);
+        classHeading[1].innerText = "<i>Class Heading was changed by <u>DOM</u></i>"
+
+        var idHeading = document.getElementById("id-heading");
+        // Targetting the single element, as id is unique, we don't need any collection
+        console.log(idHeading);
+        idHeading.style.color = "red";
+        idHeading.style.textAlign = "center";
+        idHeading.style.fontSize = "50px";
+        idHeading.style.backgroundColor = "lightblue";
+        idHeading.style.borderWidth = "20px";
+        idHeading.style.borderStyle = "ridge";
+        idHeading.style.borderColor = "yellow";
+        // css property background-color, it will change into camel case: backgroundColor
+        // css property border-width, it will change into camel case: borderWidth
+
+        // Casing: 
+        // Uppercase: AKSHAY RAO
+        // lowercase: akshay rao
+        // Camelcase: akshayRao
+        // Pascalcase: AkshayRao
+        // Snakecase: akshay_rao
+
+        var headingWithClass = document.querySelector("h1.class-heading");
+        // If we use querySelector, it will return the single item (it will target the first found item)
+        console.log(headingWithClass);
+        headingWithClass.style.padding = "20px";
+        headingWithClass.style.border = "1px solid black";
+        
+        var headingWithSameClass = document.querySelectorAll("h1.class-heading");
+        // If we use querySelectorAll, it will return the collection/NodeList (As the same class is used for mutiple elements)
+        console.log(headingWithSameClass);
+        headingWithSameClass[2].style.margin = "10px";
+        headingWithSameClass[2].style.backgroundColor = "chocolate";
+        headingWithSameClass[2].style.color = "white";
+    </script>
+    <!-- DOM Manipulation -->
+</body>
+</html>
